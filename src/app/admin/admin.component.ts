@@ -7,9 +7,9 @@ import { Adminservice } from 'src/app/service/admin-service/adminservice.service
   styleUrls: ['./admin.component.css'],
 })
 export class AdminComponent implements OnInit {
-  constructor(private service: Adminservice) {}
-
-  ngOnInit(): void {}
+  constructor(private service: Adminservice) { }
+  testModle: string = "Phong"
+  ngOnInit(): void { }
   GetData() {
     const result = this.service.getUser().subscribe({
       next(position) {
@@ -20,5 +20,9 @@ export class AdminComponent implements OnInit {
       },
     });
     console.log(result);
+  }
+
+  GetModelValue() {
+    console.log(this.testModle);
   }
 }

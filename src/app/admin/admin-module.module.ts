@@ -6,10 +6,11 @@ import { AdminComponent } from './admin.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AdminComponent],
   imports: [
     CommonModule,
     AdminRouting,
-    FormsModule]
+    FormsModule],
+  exports: [AdminComponent],
+  declarations: [AdminComponent]
 })
 export class AdminModule { }

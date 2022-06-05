@@ -10,7 +10,6 @@ import { Feature1Module } from '../feature1/feature1.module';
   imports: [
     CommonModule,
     Feature1Module
-  ],
-  exports: [Feature2Component]
+  ]
 })
 export class Feature2Module { }

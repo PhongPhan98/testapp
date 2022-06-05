@@ -10,7 +10,6 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     AdminRouting,
-    FormsModule],
-  exports: [AdminComponent]
+    FormsModule]
 })
 export class AdminModule { }

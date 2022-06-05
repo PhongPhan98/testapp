@@ -1,0 +1,28 @@
+<br />
+<h1>Day 14</h1>
+
+<div *ngIf="user.age > 13; noPG13">
+    <p>Ok, đủ 13 tuổi rồi nè!!</p>
+</div>
+<ng-template #noPG13 >
+<p>Bạn không đủ 13 tuổi nhé!</p>
+
+</ng-template>
+
+<h2>How to user ngTemplateOutlet</h2>
+
+<div class="card">
+    <div class="card-header">
+        This is part 1 having<ng-container *ngTemplateOutlet="smallDiv"></ng-container>
+    </div>
+    <div class="card-body">
+        This is part 2 having<ng-container *ngTemplateOutlet="smallDiv"></ng-container>
+    </div>
+    <div class="card-footer">
+        This is part 3 having <ng-container *ngTemplateOutlet="smallDiv"></ng-container>
+    </div>
+</div>
+
+<ng-template #smallDiv>
+    <span class="badge badge-primary">{{ counter }}</span> items
+</ng-template>

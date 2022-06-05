@@ -10,6 +10,10 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin-module.module').then(m => m.AdminModule)
   },
   {
+    path: 'day14',
+    loadChildren: () => import('./day14/day14.module').then(m => m.Day14Module)
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
